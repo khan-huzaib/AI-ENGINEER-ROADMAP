@@ -19,4 +19,6 @@ My 4-month journey to becoming an AI Engineer.
 ## Current Progress
 
 Day 1 - Python project structure, environment management and Git.
+
+
 Day 2 -LLM FUNDAMENTALS,Temperature,Tokens,simple chatbot
