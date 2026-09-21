@@ -22,3 +22,6 @@ Day 1 - Python project structure, environment management and Git.
 
 
 Day 2 -LLM FUNDAMENTALS,Temperature,Tokens,simple chatbot
+
+
+DAY 3:PYDANTIC,JSON FORMAT, PROMPT ENGINEERING
