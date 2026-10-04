@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is RAG?",
+        "relevant_document": 0
+    },
+    {
+        "question": "What are embeddings?",
+        "relevant_document": 1
+    },
+    {
+        "question": "What is a vector database?",
+        "relevant_document": 2
+    },
+    {
+        "question": "What is FastAPI?",
+        "relevant_document": 3
+    },
+    {
+        "question": "What is Docker?",
+        "relevant_document": 4
+    }
+]

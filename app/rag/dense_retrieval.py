@@ -47,11 +47,24 @@ def dense_search(query, k=5):
 # ---------- Combine with Reciprocal Rank Fusion ----------
 def hybrid_search(query, k=3, rrf_k=60):
     points = {}
-    for ranked_list in (bm25_search(query), dense_search(query)):
+
+    for ranked_list in (
+        bm25_search(query),
+        dense_search(query)
+    ):
         for rank, doc_id in enumerate(ranked_list):
-            points[doc_id] = points.get(doc_id, 0) + 1 / (rrf_k + rank + 1)
-    best = sorted(points, key=points.get, reverse=True)[:k]
-    return [documents[i] for i in best]
+            points[doc_id] = (
+                points.get(doc_id, 0)
+                + 1 / (rrf_k + rank + 1)
+            )
+
+    best = sorted(
+        points,
+        key=points.get,
+        reverse=True
+    )[:k]
+
+    return best
 
 
 query = "How does RAG retrieve information?"

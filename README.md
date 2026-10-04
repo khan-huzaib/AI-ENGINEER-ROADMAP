@@ -25,3 +25,4 @@ Day 2 -LLM FUNDAMENTALS,Temperature,Tokens,simple chatbot
 
 
 DAY 3:PYDANTIC,JSON FORMAT, PROMPT ENGINEERING
+
