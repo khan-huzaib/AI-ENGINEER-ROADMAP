@@ -1,11 +1,11 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 
 
 class AIConcept(BaseModel):
     topic: str
     definition: str
     difficulty: str
-    keywords: list[str]
+    keywords: list[str] = Field(min_length=1)
     
 concept=AIConcept(
     topic="RAG",
